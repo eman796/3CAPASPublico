@@ -33,7 +33,7 @@ public class AlumnoLog {
     
     }
     
-    public void Eliminar(int cedula)
+    public void Eliminar(String cedula)
     {
         if (AlD.Eliminar(cedula)) 
         {

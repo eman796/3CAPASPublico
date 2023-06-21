@@ -55,6 +55,8 @@ public class FrmAlumno extends javax.swing.JFrame {
         TxtCarnet = new javax.swing.JTextField();
         jPanel3 = new javax.swing.JPanel();
         BtnGuardar = new javax.swing.JButton();
+        BtnModificar = new javax.swing.JButton();
+        BtnEliminar = new javax.swing.JButton();
         PBusqueda = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         TblAlumno = new javax.swing.JTable();
@@ -206,20 +208,33 @@ public class FrmAlumno extends javax.swing.JFrame {
             }
         });
 
+        BtnModificar.setText("Modificar");
+
+        BtnEliminar.setText("Eliminar");
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(66, Short.MAX_VALUE)
-                .addComponent(BtnGuardar)
-                .addGap(52, 52, 52))
+                .addContainerGap(62, Short.MAX_VALUE)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(BtnModificar)
+                    .addComponent(BtnGuardar)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(BtnEliminar)
+                        .addGap(6, 6, 6)))
+                .addGap(54, 54, 54))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(37, 37, 37)
+                .addGap(101, 101, 101)
                 .addComponent(BtnGuardar)
+                .addGap(26, 26, 26)
+                .addComponent(BtnModificar)
+                .addGap(26, 26, 26)
+                .addComponent(BtnEliminar)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -230,7 +245,7 @@ public class FrmAlumno extends javax.swing.JFrame {
             .addGroup(PDatosLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(24, 24, 24))
         );
@@ -354,7 +369,9 @@ public class FrmAlumno extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BtnEliminar;
     private javax.swing.JButton BtnGuardar;
+    private javax.swing.JButton BtnModificar;
     private javax.swing.JTextField PApellido;
     private javax.swing.JPanel PBusqueda;
     private javax.swing.JPanel PDatos;

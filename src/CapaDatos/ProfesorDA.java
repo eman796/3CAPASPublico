@@ -24,7 +24,7 @@ public class ProfesorDA implements IPersona<Profesor>{
     }
 
     @Override
-    public boolean Eliminar(int codigo) {
+    public boolean Eliminar(String codigo) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

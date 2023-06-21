@@ -14,6 +14,6 @@ public interface IPersona<T>
 {
     boolean Agregar(T obj);
     boolean Actualizar(T obj);
-    boolean Eliminar(int codigo);
+    boolean Eliminar(String codigo);
     DefaultTableModel Lista();
 }

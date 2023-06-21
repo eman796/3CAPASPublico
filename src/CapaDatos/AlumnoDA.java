@@ -27,14 +27,14 @@ public class AlumnoDA implements IPersona<Alumno>
            
             CallableStatement cs = cn.prepareCall("{Call PA_AGREGAR_ALUMN(?,?,?,?,?,?,?,?,?)}");
             cs.setString(1, obj.getCedula());
-            cs.setString(1, obj.getNombre());
-            cs.setString(1, obj.getApellido1());
-            cs.setString(1, obj.getApellido2()); 
-            cs.setInt(1, obj.getEdad());
-            cs.setString(1, obj.getNacionalidad());
-            cs.setString(1, obj.getCorreo());
-            cs.setString(1, obj.getDireccion());
-            cs.setString(1, obj.getCarnetEstudiante());
+            cs.setString(2, obj.getNombre());
+            cs.setString(3, obj.getApellido1());
+            cs.setString(4, obj.getApellido2()); 
+            cs.setInt(5, obj.getEdad());
+            cs.setString(6, obj.getNacionalidad());
+            cs.setString(7, obj.getCorreo());
+            cs.setString(8, obj.getDireccion());
+            cs.setString(9, obj.getCarnetEstudiante());
             
             if (cs.executeUpdate()>0){
                 band = true;
@@ -83,13 +83,13 @@ public class AlumnoDA implements IPersona<Alumno>
     }
 
     @Override
-    public boolean Eliminar(int codigo) {
+    public boolean Eliminar(String codigo) {
       
      boolean band = false;
         try {
            
-            CallableStatement cs = cn.prepareCall("{Call PA_ELIMINAR_ALUMN()}");
-            cs.setInt(1, codigo);
+            CallableStatement cs = cn.prepareCall("{Call PA_ELIMINAR_ALUMN(?)}");
+            cs.setString(1, codigo);
             
             
             if (cs.executeUpdate()>0){
@@ -97,7 +97,7 @@ public class AlumnoDA implements IPersona<Alumno>
             }
               
         } catch (Exception e) {
-            System.out.println("Error al insertar Alumno");
+            System.out.println("Error al eliminar Alumno");
         }
             
       
