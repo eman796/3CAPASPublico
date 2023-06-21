@@ -9,5 +9,21 @@ package Resources;
  * @author tonyM
  */
 public class Profesor {
-    
+    private String gradoAcademico;
+
+    public Profesor(String gradoAcademico) {
+        this.gradoAcademico = gradoAcademico;
+    }
+    Profesor()
+    {
+        this.gradoAcademico = "";
+    }
+
+    public String getGradoAcademico() {
+        return gradoAcademico;
+    }
+
+    public void setGradoAcademico(String gradoAcademico) {
+        this.gradoAcademico = gradoAcademico;
+    }
 }
