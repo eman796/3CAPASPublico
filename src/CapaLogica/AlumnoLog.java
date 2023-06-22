@@ -26,7 +26,7 @@ public class AlumnoLog {
     
     public void Actualizar(String carnetEstudiante, String cedula, String nombre, String apellido1, String apellido2, int edad, String nacionalidad, String correo, String direccion)
     {
-        if (AlD.Agregar(new Alumno(carnetEstudiante,cedula,nombre,apellido1,apellido2,edad,nacionalidad,correo,direccion))) 
+        if (AlD.Actualizar(new Alumno(carnetEstudiante,cedula,nombre,apellido1,apellido2,edad,nacionalidad,correo,direccion))) 
         {
             System.out.println("Dato Actualizado");
         }
