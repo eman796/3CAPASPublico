@@ -384,26 +384,10 @@ public class JDialogAlumno extends javax.swing.JDialog {
 
     private void BtnActualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnActualizarActionPerformed
 
-//        for (int i = 0; i < 10; i++) {
-//
-//            if (ListAlumno.get(i).getCedula().equals(Cedula))
-//            {
-//
-//                //                ListProfe.get(i).setCedula(TxtCedula.getText());
-//                ListAlumno.get(i).setNombre(TxtNombre.getText());
-//                ListAlumno.get(i).setApellido1(TxtApellido1.getText());
-//                ListAlumno.get(i).setApellido2(TxtApellido2.getText());
-//                ListAlumno.get(i).setCorreo(TxtCorreo.getText());
-//                ListAlumno.get(i).setEdad(Integer.parseInt(TxtEdad.getText()));
-//                ListAlumno.get(i).setCarnetEstudiante(TxtCarnet.getText());
-//
-//                ContentTXT.AnnadirData(ListAlumno);
-//                limpiarDataAlumno();
-//                showTable();
-//
-//            }
-//
-//        }
+        Alg.Actualizar(TxtCarnet.getText(), TxtCedula.getText(), TxtNombre.getText(),TxtApellido1.getText() , TxtApellido2.getText(), Integer.parseInt(TxtEdad.getText()), TxtDireccion.getText(), TxtCorreo.getText(), TxtDireccion.getText());
+          limpiarDataAlumno();
+                showTable();
+//       
 
     }//GEN-LAST:event_BtnActualizarActionPerformed
 
