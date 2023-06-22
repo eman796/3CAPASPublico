@@ -14,10 +14,14 @@ import javax.swing.JOptionPane;
 public class ConnectionBD {
     
     Connection con = null;
+//    private static String driver = "com.mysql.cj.jdbc.Driver";
+//    private static String usuario = "root";
+//    private static String password = "Tony12345";
+//    private static String url = "jdbc:mysql://localhost:3306/_personas?zeroDateTimeBehavior=CONVERT_TO_NULL";
     private static String driver = "com.mysql.cj.jdbc.Driver";
     private static String usuario = "root";
-    private static String password = "Tony12345";
-    private static String url = "jdbc:mysql://localhost:3306/_personas?zeroDateTimeBehavior=CONVERT_TO_NULL";
+    private static String password = "UZgXbVtuZHm4gdf6EO0g";
+    private static String url = "jdbc:mysql://containers-us-west-148.railway.app:6678/_PERSONAS?zeroDateTimeBehavior=CONVERT_TO_NULL";
     
     static
     {
