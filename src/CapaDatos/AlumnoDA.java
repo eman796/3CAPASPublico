@@ -56,7 +56,7 @@ public class AlumnoDA implements IPersona<Alumno>
      boolean band = false;
         try {
            
-            CallableStatement cs = cn.prepareCall("{Call PA_ACTUALIZAR_ALUMN(?,?,?,?,?,?,?,?,?)}");
+            CallableStatement cs = cn.prepareCall("CALL PA_ACTUALIZAR_ALUMN(?,?,?,?,?,?,?,?,?)}");
             cs.setString(1, obj.getCedula());
             cs.setString(2, obj.getNombre());
             cs.setString(3, obj.getApellido1());
@@ -74,7 +74,7 @@ public class AlumnoDA implements IPersona<Alumno>
               
               
         } catch (Exception e) {
-            System.out.println("Error al insertar Alumno");
+            System.out.println("Error al actualizar Alumno");
         }
             
       
