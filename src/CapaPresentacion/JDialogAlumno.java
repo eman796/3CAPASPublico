@@ -374,7 +374,7 @@ public class JDialogAlumno extends javax.swing.JDialog {
     private void BtnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnGuardarActionPerformed
 
        
-       Alg.Agregar(TxtCarnet.getText(), TxtCedula.getText(), TxtNombre.getText(),TxtApellido1.getText() , TxtApellido2.getText(), Integer.parseInt(TxtEdad.getText()), TxtDireccion.getText(), TxtCorreo.getText(), TxtDireccion.getText());
+         Alg.Agregar(TxtCarnet.getText(), TxtCedula.getText(), TxtNombre.getText(),TxtApellido1.getText() , TxtApellido2.getText(), Integer.parseInt(TxtEdad.getText()), TxtDireccion.getText(), TxtCorreo.getText(), TxtDireccion.getText());
          TblAlumno.setModel(Alg.Lista());
          
         limpiarDataAlumno();
@@ -431,6 +431,7 @@ public class JDialogAlumno extends javax.swing.JDialog {
         TxtCarnet.setText(String.valueOf(Carnet));
         TxtNacionalidad.setText(Nacionalidad);
         TxtDireccion.setText(Direccion);
+        
         BtnGuardar.setEnabled(false);
         TxtCedula.setEnabled(false);
     }//GEN-LAST:event_TblAlumnoMouseClicked
@@ -452,6 +453,8 @@ public class JDialogAlumno extends javax.swing.JDialog {
         TxtCorreo.setText("");
         TxtEdad.setText("");
         TxtCarnet.setText("");
+        TxtNacionalidad.setText("");
+        TxtDireccion.setText("");
 //        LblError.setText("");
         TxtCedula.setEnabled(true);
         BtnGuardar.setEnabled(true);
