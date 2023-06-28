@@ -374,7 +374,7 @@ public class JDialogAlumno extends javax.swing.JDialog {
     private void BtnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnGuardarActionPerformed
 
        
-         Alg.Agregar(TxtCarnet.getText(), TxtCedula.getText(), TxtNombre.getText(),TxtApellido1.getText() , TxtApellido2.getText(), Integer.parseInt(TxtEdad.getText()), TxtDireccion.getText(), TxtCorreo.getText(), TxtDireccion.getText());
+         Alg.Agregar(TxtCarnet.getText(), TxtCedula.getText(), TxtNombre.getText(),TxtApellido1.getText() , TxtApellido2.getText(), Integer.parseInt(TxtEdad.getText()), TxtNacionalidad.getText(), TxtCorreo.getText(), TxtDireccion.getText());
         limpiarDataAlumno();
         showTable();
 
@@ -382,7 +382,7 @@ public class JDialogAlumno extends javax.swing.JDialog {
 
     private void BtnActualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnActualizarActionPerformed
 
-        Alg.Actualizar(TxtCarnet.getText(), TxtCedula.getText(), TxtNombre.getText(),TxtApellido1.getText() , TxtApellido2.getText(), Integer.parseInt(TxtEdad.getText()), TxtDireccion.getText(), TxtCorreo.getText(), TxtDireccion.getText());
+        Alg.Actualizar(TxtCarnet.getText(), TxtCedula.getText(), TxtNombre.getText(),TxtApellido1.getText() , TxtApellido2.getText(), Integer.parseInt(TxtEdad.getText()), TxtNacionalidad.getText(), TxtCorreo.getText(), TxtDireccion.getText());
           limpiarDataAlumno();
                 showTable();
 //       
