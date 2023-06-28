@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package CapaDatos;
-import com.mysql.cj.jdbc.Driver;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import javax.swing.JOptionPane;

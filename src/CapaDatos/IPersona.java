@@ -4,6 +4,8 @@
  */
 package CapaDatos;
 
+import Resources.Profesor;
+
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -13,6 +15,9 @@ import javax.swing.table.DefaultTableModel;
 public interface IPersona<T> 
 {
     boolean Agregar(T obj);
+
+    boolean add(Profesor obj);
+
     boolean Actualizar(T obj);
     boolean Eliminar(String codigo);
     DefaultTableModel Lista();
