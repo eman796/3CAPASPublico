@@ -67,9 +67,7 @@ public class AlumnoDA implements IPersona<Alumno>
             cs.setString(8, obj.getDireccion());
             cs.setString(9, obj.getCarnetEstudiante());
             
-            if (cs.executeUpdate()>0){
-                band = true;
-            }
+            band = true;
             
               
               
