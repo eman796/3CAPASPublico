@@ -375,8 +375,6 @@ public class JDialogAlumno extends javax.swing.JDialog {
 
        
          Alg.Agregar(TxtCarnet.getText(), TxtCedula.getText(), TxtNombre.getText(),TxtApellido1.getText() , TxtApellido2.getText(), Integer.parseInt(TxtEdad.getText()), TxtDireccion.getText(), TxtCorreo.getText(), TxtDireccion.getText());
-         TblAlumno.setModel(Alg.Lista());
-         
         limpiarDataAlumno();
         showTable();
 
@@ -446,19 +444,6 @@ public class JDialogAlumno extends javax.swing.JDialog {
 
     public void showTable() {
 
-//        String alumMat[][] = new String[ListAlumno.size()][8];
-
-//        for (int i = 0; i < ListAlumno.size(); i++) {
-//            alumMat[i][0] = ListAlumno.get(i).getCedula();
-//            alumMat[i][1] = ListAlumno.get(i).getNombre();
-//            alumMat[i][2] = ListAlumno.get(i).getApellido1();
-//            alumMat[i][3] = ListAlumno.get(i).getApellido2();
-//            alumMat[i][4] = ListAlumno.get(i).getCorreo();
-//            alumMat[i][5] = String.valueOf(ListAlumno.get(i).getEdad());
-//            alumMat[i][6] = String.valueOf(ListAlumno.get(i).getCarnetEstudiante());
-//            alumMat[i][7] = String.valueOf(ListAlumno.get(i).calcularEdad());
-//        }
-//        TblAlumno.setModel(new javax.swing.table.DefaultTableModel(alumMat, new String[]{"Cedula", "Nombre", "Primer Apellido", "Segundo Apellido", "Correo", "Edad", "Carnet", "Año de nacimiento"}));
 TblAlumno.setModel(Alg.Lista());
     }
 
