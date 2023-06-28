@@ -67,9 +67,9 @@ public class AlumnoDA implements IPersona<Alumno>
             cs.setString(8, obj.getDireccion());
             cs.setString(9, obj.getCarnetEstudiante());
             
-            band = true;
-            
-              
+            if (cs.executeUpdate()>0){
+                band = true;
+            }
               
         } catch (Exception e) {
             System.out.println("Error al actualizar Alumno");
