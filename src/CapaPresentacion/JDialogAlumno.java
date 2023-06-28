@@ -391,12 +391,8 @@ public class JDialogAlumno extends javax.swing.JDialog {
 
     private void BtnEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnEliminarActionPerformed
      Alg.Eliminar(TxtCedula.getText());
-        //JOptionPane.showMessageDialog(null, "Mensaje dentro de la ventana", "Mensaje en la barra de titulo", JOptionPane.WARNING_MESSAGE);
-//        int resp = JOptionPane.showConfirmDialog(null, "¿Desea eliminar a: ?"+Cedula, "Alerta!", JOptionPane.YES_NO_OPTION);
-//        if (resp == 0) {
-//             
-//              JOptionPane.showMessageDialog(null, "Alumno eliminado con exito", "Mensaje", JOptionPane.WARNING_MESSAGE);
-//        }
+     limpiarDataAlumno();
+     showTable();
     }//GEN-LAST:event_BtnEliminarActionPerformed
 
     private void BtnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnLimpiarActionPerformed
