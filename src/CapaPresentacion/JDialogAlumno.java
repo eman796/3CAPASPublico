@@ -24,7 +24,7 @@ public class JDialogAlumno extends javax.swing.JDialog {
     String Apellido2;
     String Correo;
     int Edad;
-    int Carnet;
+    String Carnet;
     String Nacionalidad;
     String  Direccion;
 
@@ -51,7 +51,7 @@ public class JDialogAlumno extends javax.swing.JDialog {
                 Nacionalidad = TblAlumno.getValueAt(i, 5).toString();
                 Correo = TblAlumno.getValueAt(i, 6).toString();
                 Direccion = TblAlumno.getValueAt(i, 7).toString();
-                Carnet = Integer.valueOf(TblAlumno.getValueAt(i, 8).toString());
+                Carnet = TblAlumno.getValueAt(i, 8).toString();
                 
 
             }
